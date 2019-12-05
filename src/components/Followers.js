@@ -8,8 +8,11 @@ const Followers = props => {
         {props.followers.map(person => (
           // key={person.id}
           <div className="followerCard">
-            <img width="200px" src={person.avatar_url} alt="" />
-            <h3>GitHub Name: {person.login}</h3>
+            <img width="250px" src={person.avatar_url} alt="" />
+            <div className="nameDiv">
+              <p>GitHub Name:</p>
+              <p>{person.login}</p>
+            </div>
           </div>
         ))}
       </div>
